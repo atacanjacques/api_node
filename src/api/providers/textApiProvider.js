@@ -18,3 +18,10 @@ exports.getRandomText = () => {
   })
 
 }
+
+// module.exports.getRandomText = async function getRandomText() {
+//
+//   let response = await axios.get(baseUrl + '/plaintext', {responseType: "text"})
+//   return response.data;
+//
+// }
