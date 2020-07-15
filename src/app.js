@@ -25,4 +25,8 @@ postRoute(app);
 commentRoute(app);
 userRoute(app);
 
-app.listen(port, hostname);
+if(!module.parent){
+  app.listen(port, hostname);
+}
+
+module.exports = app
