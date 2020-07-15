@@ -23,6 +23,9 @@ afterEach(async () => await dbHandler.clearDatabase());
 after(async () => await dbHandler.closeDatabase());
 
 
+// Remove console.log function
+console.log = function() {}
+
 /**
 * Tests on /posts uri
 */
